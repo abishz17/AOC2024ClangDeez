@@ -29,9 +29,6 @@ int main() {
   qsort(right, sizeof(right) / sizeof(*right), sizeof(*right), compare);
   for (int i = 0; i < 1000; i++) {
     diffarr[i] = abs(left[i] - right[i]);
-  }
-  for(int i = 0 ; i < 1000; i++){
-    // printf("%d\n", diffarr[i]);
     result+=diffarr[i];
   }
   printf("The final result is: %d ",result);
